@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aiohttp = "==3.8.1"
+webargs = "==5.5.3"
+aiohttp-apispec = "==2.2.3"
+sqlalchemy = "*"
+asyncpg = "*"
+
+[dev-packages]
+aiohttp-devtools = "*"
+black = "*"
+isort = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+server = "adev runserver main.py"
